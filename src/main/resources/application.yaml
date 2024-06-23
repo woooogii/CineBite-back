@@ -1,0 +1,17 @@
+movie:
+  url: "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json"
+  api-key: "9c0958836e5f5bbc2d3f8875008dc7ca"
+## tmdb TrendMovieList api key
+movieList:
+  api-key: "53d9309a932d772c8909f12351cc4269"
+  access-token: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1M2Q5MzA5YTkzMmQ3NzJjODkwOWYxMjM1MWNjNDI2OSIsInN1YiI6IjY2NjA2MDMzOWNmMDg4MjZiMjdkOTMzNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WCa1Co81iLKIXxDRuK-6Sf0ywU1kXG-R7JEmmxmaCMg"
+ 
+  urlHead: "https://api.themoviedb.org/3/trending/movie/"
+  urlTail: "?language=ko-KR&page="
+  urlday: "day" # 일
+  urlweek: "week" # 주
+  
+## tmdb MovieDetail api key
+movieDetail:
+  urlHead: "https://api.themoviedb.org/3/movie/"
+  urlTail: "?append_to_response=credits&language=ko-KR"
