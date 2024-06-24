@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.cine.back.movieList.dto.Genre;
 import com.cine.back.movieList.entity.MovieDetailEntity;
 import com.cine.back.movieList.repository.MovieDetailRepository;
 
@@ -30,9 +31,9 @@ public class MovieListService {
         }
     }
 
-    public Optional<List<MovieDetailEntity>> getMovieGernes(String genre) {
+    public Optional<List<MovieDetailEntity>> getMovieGenres(Genre genre) {
         try {
-            Optional<List<MovieDetailEntity>> genresList = movieDetailRepository.findByGenres(genre);
+            Optional<List<MovieDetailEntity>> genresList = movieDetailRepository.findByGenres(genre.getName());
             log.info("장르별 영화 조회 성공");
             return genresList;
         } catch (Exception e) {
